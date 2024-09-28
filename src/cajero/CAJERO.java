@@ -78,7 +78,7 @@ public class CAJERO extends JFrame implements  ActionListener{
         {
             datos.setNombre(txt_nombre.getText());
             datos.setLogin(txt_login.getText());
-            datos.setPass(txt_password.getText());
+            datos.setPassword(txt_password.getText());
             JOptionPane.showMessageDialog(null, "Usuario Creado");
                      
         }

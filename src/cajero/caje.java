@@ -3,7 +3,7 @@ package cajero;
 public class caje {
     
     int numero,deposito,retirar,total1,total2;
-    String nombre,pass,login;
+    String nombre,password,login;
 
     public int getTotal1() {
         return total1;
@@ -22,10 +22,6 @@ public class caje {
         this.total2 = retirar;
     }
     
-    
-    
-    
-
     public int getRetirar() {
         return retirar;
     }
@@ -33,8 +29,6 @@ public class caje {
     public void setRetirar(int retirar) {
         this.retirar = retirar;
     }
-    
-    
 
     public int getNumero() {
         return numero;
@@ -60,12 +54,12 @@ public class caje {
         this.nombre = nombre;
     }
 
-    public String getPass() {
-        return pass;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getLogin() {
