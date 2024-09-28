@@ -35,8 +35,8 @@ public class CAJERO extends JFrame implements  ActionListener{
         btn_consultar = new JButton("consultar");
         
         Container contenedor = getContentPane();
-        GridLayout gr = new GridLayout(8, 2, 3, 3);
-        contenedor.setLayout(gr);
+        GridLayout Layout = new GridLayout(8, 2, 3, 3);
+        contenedor.setLayout(Layout);
         contenedor.add(numero);
         contenedor.add(txt_numero);
         contenedor.add(nombre);
@@ -55,7 +55,7 @@ public class CAJERO extends JFrame implements  ActionListener{
         contenedor.add(btn_registrarlogin);
         contenedor.add(btn_retirar);
         contenedor.add(btn_consultar);
-        btn_regilogin.addActionListener(this);
+        btn_registrarlogin.addActionListener(this);
         btn_ingresar.addActionListener(this);
         btn_retirar.addActionListener(this);
         btn_consultar.addActionListener(this);
@@ -74,7 +74,7 @@ public class CAJERO extends JFrame implements  ActionListener{
     {
         
         
-        if(evento.getSource()==btn_regilogin )
+        if(evento.getSource()==btn_registrarlogin )
         {
             datos.setNombre(txt_nombre.getText());
             datos.setLogin(txt_login.getText());
