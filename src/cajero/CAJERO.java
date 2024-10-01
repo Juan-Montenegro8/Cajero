@@ -1,16 +1,14 @@
 package cajero;
-import javax.swing.*;
-import java.awt.event.*;
-import java.util.*;
 import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 public class CAJERO extends JFrame implements  ActionListener{
     
     caje datos=new caje();
     JLabel numero,nombre,login,password,deposito,retiro,total;
     JPasswordField txt_password;
     JTextField txt_nombre,txt_numero,txt_login,txt_deposito,txt_total,txt_retiro;
-    JTextArea block,tarea;
-    JButton btn_consultar,btn_registrarlogin,btn_retirar,btb_consultar,btn_ingresar;
+    JButton btn_consultar,btn_registrarlogin,btn_retirar;
 
     public CAJERO() {
       setTitle("Cajero");
@@ -30,7 +28,6 @@ public class CAJERO extends JFrame implements  ActionListener{
         txt_password=new JPasswordField();
         txt_total= new JTextField();
         btn_registrarlogin = new JButton("crear login");
-        btn_ingresar = new JButton("depositar");
         btn_retirar = new JButton("retirar");
         btn_consultar = new JButton("consultar");
         
@@ -55,10 +52,7 @@ public class CAJERO extends JFrame implements  ActionListener{
         contenedor.add(btn_registrarlogin);
         contenedor.add(btn_retirar);
         contenedor.add(btn_consultar);
-        btn_registrarlogin.addActionListener(this);
-        btn_ingresar.addActionListener(this);
-        btn_retirar.addActionListener(this);
-        btn_consultar.addActionListener(this);
+        
           
     }
     
